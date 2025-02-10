@@ -11,7 +11,7 @@ const UpdatePost = ({ params }) => {
   // make http request
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`http://localhost:3000/api/posts/${id}`);
+      const response = await fetch(`/api/posts/${id}`);
       const result = await response.json();
       setData(result);
     };
